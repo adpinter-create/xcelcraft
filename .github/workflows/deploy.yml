@@ -1,0 +1,72 @@
+name: Deploy XcelCraft page
+
+# Static page: publishes to GitHub Pages whenever main changes, or on demand.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      publish: ${{ steps.vis.outputs.hidden != '1' || github.event_name != 'schedule' }}
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Hidden switch (turned on and off in the site portal)
+        id: vis
+        run: |
+          if [ -f HIDDEN.html ]; then
+            echo "hidden=1" >> "$GITHUB_OUTPUT"
+            mkdir -p _hidden
+            cp HIDDEN.html _hidden/index.html
+            cp HIDDEN.html _hidden/404.html
+            printf 'User-agent: *\nDisallow: /\n' > _hidden/robots.txt
+            touch _hidden/.nojekyll
+            if [ -f CNAME ]; then cp CNAME _hidden/; fi
+            echo "This site is switched off in the portal, so only the placeholder page is published."
+          fi
+
+      - name: Check the catalog is built in
+        if: steps.vis.outputs.hidden != '1'
+        run: |
+          if grep -q '<script id="catalog-data" type="application/json">{}</script>' index.html; then
+            echo "::error::index.html has an empty catalog. Run tools/build_catalog.py against the add-in repo first."
+            exit 1
+          fi
+
+      - name: Stage site
+        if: steps.vis.outputs.hidden != '1'
+        run: |
+          mkdir -p _site
+          cp index.html styles.css app.js favicon.svg .nojekyll _site/
+          cp -r fonts img _site/
+          [ -f CNAME ] && cp CNAME _site/ || true
+
+      - uses: actions/configure-pages@v5
+        if: steps.vis.outputs.hidden != '1' || github.event_name != 'schedule'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.vis.outputs.hidden != '1' || github.event_name != 'schedule'
+        with:
+          path: ${{ steps.vis.outputs.hidden == '1' && '_hidden' || '_site' }}
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

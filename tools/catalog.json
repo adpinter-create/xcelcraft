@@ -1,0 +1,2609 @@
+{
+ "name": "XcelCraft",
+ "version": "0.1.0-beta",
+ "repo": null,
+ "download": null,
+ "families": [
+  {
+   "name": "Utilities",
+   "categories": [
+    {
+     "name": "Text",
+     "tools": [
+      {
+       "name": "Prefix or suffix text to each cell",
+       "proc": "XC_AddTextStartEnd",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "UPPERCASE",
+       "proc": "XC_Upper",
+       "module": "modText.bas"
+      },
+      {
+       "name": "lowercase",
+       "proc": "XC_Lower",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Capitalize the first letter, leave the rest",
+       "proc": "XC_CapFirstOnly",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Sentence case (first letter up, rest down)",
+       "proc": "XC_CapFirstLowerRest",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Title Case",
+       "proc": "XC_TitleCase",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Change case: upper, lower, sentence, title, toggle",
+       "proc": "XC_ChangeCaseOptions",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Write numbers out in words",
+       "proc": "XC_SpellNumbers",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Text to real dates (DMY / MDY / YMD)",
+       "proc": "XC_TextToDates",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Trim spaces at both ends",
+       "proc": "XC_TrimSpaces",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Trim and collapse spaces",
+       "proc": "XC_TrimAllSpaces",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Trim line breaks at both ends",
+       "proc": "XC_TrimLineBreaks",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Scrub cells: spaces, junk characters, text numbers",
+       "proc": "XC_CleanUpData",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Find and replace across sheets, notes and shapes",
+       "proc": "XC_AdvancedFindReplace",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Strip or swap chosen characters",
+       "proc": "XC_RemoveUnwantedChars",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Strip accents (e-acute to e)",
+       "proc": "XC_RemoveAccents",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Strip letters",
+       "proc": "XC_RemoveLetters",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Strip digits",
+       "proc": "XC_RemoveNumbers",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Strip line breaks at the end",
+       "proc": "XC_RemoveTrailingLineBreaks",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Cut the first N characters",
+       "proc": "XC_RemoveFirstX",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Cut the last N characters",
+       "proc": "XC_RemoveLastX",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Keep only the first N characters",
+       "proc": "XC_KeepFirstX",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Subscript the digits in chemical formulas",
+       "proc": "XC_SubscriptChemical",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Superscript the last character",
+       "proc": "XC_SuperscriptLast",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Subscript the last character",
+       "proc": "XC_SubscriptLast",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Reverse the characters",
+       "proc": "XC_ReverseText",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Sort the items inside each cell",
+       "proc": "XC_SortInsideCell",
+       "module": "modText.bas",
+       "asks": true
+      }
+     ]
+    },
+    {
+     "name": "Numbers & Dates",
+     "tools": [
+      {
+       "name": "Add, multiply, round or negate the selected numbers",
+       "proc": "XC_ApplyCalculation",
+       "module": "modNumbersDates.bas",
+       "asks": true
+      },
+      {
+       "name": "Replace formulas with their values",
+       "proc": "XC_FormulasToValues",
+       "module": "modNumbersDates.bas"
+      },
+      {
+       "name": "Text to real numbers",
+       "proc": "XC_TextToNumbers",
+       "module": "modNumbersDates.bas"
+      },
+      {
+       "name": "Store numbers as text (leading apostrophe)",
+       "proc": "XC_NumbersToText",
+       "module": "modNumbersDates.bas"
+      },
+      {
+       "name": "Replace values with their displayed text",
+       "proc": "XC_ValuesToFormattedText",
+       "module": "modNumbersDates.bas"
+      },
+      {
+       "name": "Flip, negate or absolute the selected numbers",
+       "proc": "XC_ChangeSigns",
+       "module": "modNumbersDates.bas",
+       "asks": true
+      },
+      {
+       "name": "Move trailing minus signs to the front (50- to -50)",
+       "proc": "XC_FixTrailingMinus",
+       "module": "modNumbersDates.bas"
+      },
+      {
+       "name": "Show N significant decimals",
+       "proc": "XC_SignificantDecimals",
+       "module": "modNumbersDates.bas",
+       "asks": true
+      },
+      {
+       "name": "Percent to plain number (5% to 5)",
+       "proc": "XC_PercentToNumber",
+       "module": "modNumbersDates.bas"
+      },
+      {
+       "name": "Write numbers out in words",
+       "proc": "XC_SpellNumbers",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Round the stored values",
+       "proc": "XC_RoundPermanently",
+       "module": "modNumbersDates.bas",
+       "asks": true
+      },
+      {
+       "name": "Pad with leading zeros to a fixed length",
+       "proc": "XC_AddLeadingZeros",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "Number or label cells in sequence",
+       "proc": "XC_AutoNumber",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "Fill with unique random numbers",
+       "proc": "XC_UniqueRandom",
+       "module": "modFill.bas"
+      },
+      {
+       "name": "Text to real dates (DMY / MDY / YMD)",
+       "proc": "XC_TextToDates",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Julian day numbers to dates (yyddd, yyyyddd, cyyddd)",
+       "proc": "XC_JulianToDate",
+       "module": "modNumbersDates.bas"
+      },
+      {
+       "name": "Insert a date",
+       "proc": "XC_InsertDate",
+       "module": "modFill.bas",
+       "asks": true
+      }
+     ]
+    },
+    {
+     "name": "Fill & Series",
+     "tools": [
+      {
+       "name": "Put a value in every empty cell",
+       "proc": "XC_FillBlanks",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "Overwrite every non-empty cell with a value",
+       "proc": "XC_OverwriteFilled",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "Fill empty cells with the value above",
+       "proc": "XC_FillBlanksFromAbove",
+       "module": "modFill.bas"
+      },
+      {
+       "name": "Pad with leading zeros to a fixed length",
+       "proc": "XC_AddLeadingZeros",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "Prefix or suffix text to each cell",
+       "proc": "XC_AddTextStartEnd",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Extend a linear trend down columns",
+       "proc": "XC_FillTrendVertical",
+       "module": "modFill.bas"
+      },
+      {
+       "name": "Extend a linear trend across rows",
+       "proc": "XC_FillTrendHorizontal",
+       "module": "modFill.bas"
+      },
+      {
+       "name": "Number or label cells in sequence",
+       "proc": "XC_AutoNumber",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "Fill with unique random numbers",
+       "proc": "XC_UniqueRandom",
+       "module": "modFill.bas"
+      },
+      {
+       "name": "Stamp date and time (with seconds)",
+       "proc": "XC_InsertNowSeconds",
+       "module": "modFill.bas"
+      },
+      {
+       "name": "Stamp time (with seconds)",
+       "proc": "XC_InsertTimeSeconds",
+       "module": "modFill.bas"
+      },
+      {
+       "name": "Insert a date",
+       "proc": "XC_InsertDate",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "Stamp the file path into a cell, header or footer",
+       "proc": "XC_InsertFilePath",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "List the files in a folder",
+       "proc": "XC_ListFilesInFolder",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "Write each sheet's name into a cell",
+       "proc": "XC_InsertSheetNames",
+       "module": "modFill.bas"
+      }
+     ]
+    },
+    {
+     "name": "Sheets",
+     "tools": [
+      {
+       "name": "New sheet with a name",
+       "proc": "XC_InsertNamedSheet",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "New sheets named from the selected cells",
+       "proc": "XC_InsertSheetsFromCells",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Rename this sheet",
+       "proc": "XC_RenameActiveSheet",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Rename several sheets: prefix, replace, number",
+       "proc": "XC_RenameMultipleSheets",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Name each sheet after one of its cells",
+       "proc": "XC_RenameSheetsFromCell",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Write each sheet's name into a cell",
+       "proc": "XC_InsertSheetNames",
+       "module": "modFill.bas"
+      },
+      {
+       "name": "Back to the previous sheet",
+       "proc": "XC_SwitchToPreviousSheet",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Sort sheet tabs",
+       "proc": "XC_SortSheets",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Build a contents sheet linking to every sheet",
+       "proc": "XC_CreateIndexSheet",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Split a range into sheets by value or row count",
+       "proc": "XC_SplitRangeToSheets",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Delete empty sheets",
+       "proc": "XC_RemoveEmptySheets",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Unhide every sheet",
+       "proc": "XC_UnhideAllSheets",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Hide selected sheets",
+       "proc": "XC_HideSelectedSheets",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Hide selected sheets (very hidden)",
+       "proc": "XC_HideSelectedVeryHidden",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Protect several sheets",
+       "proc": "XC_ProtectMultipleSheets",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Unprotect several sheets",
+       "proc": "XC_UnprotectMultipleSheets",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Print chosen sheets",
+       "proc": "XC_PrintMultipleSheets",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Apply this sheet's page setup to other sheets",
+       "proc": "XC_CopyPageSetup",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Use this selection as print area on selected sheets",
+       "proc": "XC_SetPrintAreaSelectedSheets",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Clear the print area on selected sheets",
+       "proc": "XC_ClearPrintAreaSelectedSheets",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Reset page breaks on selected sheets",
+       "proc": "XC_ResetPageBreaksSelectedSheets",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Freeze panes at this cell on selected sheets",
+       "proc": "XC_FreezePanesMultiple",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Unfreeze panes on selected sheets",
+       "proc": "XC_UnfreezePanesMultiple",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Stack data from several sheets onto one",
+       "proc": "XC_StackFromSheets",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Delete unused cell styles",
+       "proc": "XC_RemoveUnusedStyles",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Trim unused trailing rows and columns on selected sheets",
+       "proc": "XC_DeleteEndingRowsCols",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Reset the used range (fix Ctrl+End)",
+       "proc": "XC_ResetLastCell",
+       "module": "modSheets.bas",
+       "asks": true
+      }
+     ]
+    },
+    {
+     "name": "Ranges",
+     "tools": [
+      {
+       "name": "Find and replace across sheets, notes and shapes",
+       "proc": "XC_AdvancedFindReplace",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Sort by color, length, last word, natural order",
+       "proc": "XC_AdvancedSorting",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Shuffle rows",
+       "proc": "XC_SortRandom",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Sort the items inside each cell",
+       "proc": "XC_SortInsideCell",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Reverse the order of cells",
+       "proc": "XC_FlipCells",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Scroll the selection to the top-left",
+       "proc": "XC_ScrollTopLeft",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Scroll the selection to the center",
+       "proc": "XC_ScrollCenter",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Swap formula errors for a message or IFERROR",
+       "proc": "XC_ReplaceErrors",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Mark source range for the paste tools",
+       "proc": "XC_CopySource",
+       "module": "modRange.bas",
+       "onkey": "^%c",
+       "keys": "Ctrl+Alt+C"
+      },
+      {
+       "name": "Paste special, several options at once",
+       "proc": "XC_PasteSpecialCombined",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Paste values with formatting",
+       "proc": "XC_PasteValuesAndFormatting",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Paste values only",
+       "proc": "XC_PasteValuesNoFormatting",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Copy visible cells onto visible cells",
+       "proc": "XC_CopyVisibleToVisible",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Replace values with their displayed text",
+       "proc": "XC_ValuesToFormattedText",
+       "module": "modNumbersDates.bas"
+      },
+      {
+       "name": "Bake conditional formats into real formats",
+       "proc": "XC_FreezeConditionalFormatting",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Copy formulas verbatim (no reference shift)",
+       "proc": "XC_CopyFormulasExact",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Move as values, leaving dependents untouched",
+       "proc": "XC_CutPasteAsValues",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Paste several selected areas together",
+       "proc": "XC_CopyMultipleRanges",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Transpose with formulas verbatim",
+       "proc": "XC_TransposeExact",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Split a range into sheets by value or row count",
+       "proc": "XC_SplitRangeToSheets",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Blank out repeat values, keep the first",
+       "proc": "XC_ClearDuplicates",
+       "module": "modRange.bas",
+       "demo": {
+        "scene": "clear",
+        "caption": "Repeat values are blanked out and the first of each stays."
+       }
+      },
+      {
+       "name": "Count repeats, optionally color them",
+       "proc": "XC_CountDuplicates",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Color each group of repeats differently",
+       "proc": "XC_HighlightDuplicateSets",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "List defined names and tables",
+       "proc": "XC_ListNames",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Expand defined names into cell references",
+       "proc": "XC_ReplaceNamesWithRefs",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Delete names that live inside the selection",
+       "proc": "XC_DeleteNamesInSelection",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Delete every defined name in the workbook",
+       "proc": "XC_DeleteAllNames",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Delete names that point to #REF!",
+       "proc": "XC_DeleteInvalidNames",
+       "module": "modRange.bas"
+      }
+     ]
+    },
+    {
+     "name": "Rows & Columns",
+     "tools": [
+      {
+       "name": "Select, hide or delete rows / columns by a test",
+       "proc": "XC_RowsColsByCriteria",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Sort by color, length, last word, natural order",
+       "proc": "XC_AdvancedSorting",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Band every nth row or column",
+       "proc": "XC_ColorNthRowCol",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Separate groups where a column's value changes",
+       "proc": "XC_InsertVisualBreaks",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Join each row into one cell",
+       "proc": "XC_JoinHorizontal",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Join each column into one cell",
+       "proc": "XC_JoinVertical",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Join each column into one cell with line breaks",
+       "proc": "XC_JoinVerticalLineBreak",
+       "module": "modColsRows.bas"
+      },
+      {
+       "name": "Interleave blank rows or columns",
+       "proc": "XC_InsertBlankBetween",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Insert N rows or columns here",
+       "proc": "XC_InsertNRows",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Unhide rows and columns, all or chosen",
+       "proc": "XC_UnhideRowsCols",
+       "module": "modColsRows.bas",
+       "asks": true,
+       "demo": {
+        "scene": "hide",
+        "caption": "Hidden rows and columns come back, all of them or the ones you choose.",
+        "caption2": "Everything is back in view."
+       }
+      },
+      {
+       "name": "Delete hidden rows and/or columns",
+       "proc": "XC_DeleteHiddenRowsCols",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Drop empty rows",
+       "proc": "XC_DeleteEmptyRows",
+       "module": "modColsRows.bas"
+      },
+      {
+       "name": "Drop empty columns",
+       "proc": "XC_DeleteEmptyColumns",
+       "module": "modColsRows.bas"
+      },
+      {
+       "name": "Auto-fit row height including merged cells",
+       "proc": "XC_FixAutofitMerged",
+       "module": "modColsRows.bas"
+      },
+      {
+       "name": "Scrub cells: spaces, junk characters, text numbers",
+       "proc": "XC_CleanUpData",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Set cell size in cm, inches or pixels",
+       "proc": "XC_SetCellSize",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Wrap one column into a grid",
+       "proc": "XC_ReshapeColumnToTable",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Lay a long list out side by side for printing",
+       "proc": "XC_SplitLongDataset",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Stack data from several sheets onto one",
+       "proc": "XC_StackFromSheets",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Trim unused trailing rows and columns on selected sheets",
+       "proc": "XC_DeleteEndingRowsCols",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Reset the used range (fix Ctrl+End)",
+       "proc": "XC_ResetLastCell",
+       "module": "modSheets.bas",
+       "asks": true
+      }
+     ]
+    },
+    {
+     "name": "Formulas",
+     "tools": [
+      {
+       "name": "Replace formulas with their values",
+       "proc": "XC_FormulasToValues",
+       "module": "modNumbersDates.bas"
+      },
+      {
+       "name": "Add, multiply, round or negate the selected numbers",
+       "proc": "XC_ApplyCalculation",
+       "module": "modNumbersDates.bas",
+       "asks": true
+      },
+      {
+       "name": "Swap formula errors for a message or IFERROR",
+       "proc": "XC_ReplaceErrors",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Transpose with formulas verbatim",
+       "proc": "XC_TransposeExact",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Copy formulas verbatim (no reference shift)",
+       "proc": "XC_CopyFormulasExact",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Make references relative, absolute or mixed",
+       "proc": "XC_ChangeReferenceStyle",
+       "module": "modFormulas.bas",
+       "asks": true
+      },
+      {
+       "name": "Expand defined names into cell references",
+       "proc": "XC_ReplaceNamesWithRefs",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Re-enter array formulas",
+       "proc": "XC_ReapplyCSE",
+       "module": "modFormulas.bas"
+      },
+      {
+       "name": "Show formulas as text (apostrophe toggle)",
+       "proc": "XC_FormulasToText",
+       "module": "modFormulas.bas"
+      },
+      {
+       "name": "List every formula",
+       "proc": "XC_ListAllFormulas",
+       "module": "modFormulas.bas"
+      },
+      {
+       "name": "Enter a formula in US-English syntax",
+       "proc": "XC_InsertUSFormula",
+       "module": "modFormulas.bas",
+       "asks": true
+      }
+     ]
+    },
+    {
+     "name": "Selection",
+     "tools": [
+      {
+       "name": "Select cells that pass a test",
+       "proc": "XC_SelectCellsByCriteria",
+       "module": "modSelect.bas",
+       "asks": true,
+       "onkey": "^%+q",
+       "keys": "Ctrl+Alt+Shift+Q",
+       "demo": {
+        "scene": "select",
+        "caption": "Select cells that pass a test, from the Selection menu or Ctrl+Alt+Shift+Q."
+       }
+      },
+      {
+       "name": "Select, hide or delete rows / columns by a test",
+       "proc": "XC_RowsColsByCriteria",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Nudge, grow or shrink the selection",
+       "proc": "XC_MoveExtendShrink",
+       "module": "modSelect.bas",
+       "asks": true
+      },
+      {
+       "name": "Drop cells from the selection",
+       "proc": "XC_DeselectCells",
+       "module": "modSelect.bas",
+       "asks": true
+      },
+      {
+       "name": "Select everything except the current selection",
+       "proc": "XC_InvertSelection",
+       "module": "modSelect.bas",
+       "asks": true
+      },
+      {
+       "name": "Merge selected areas into one block",
+       "proc": "XC_MergeContiguousSelections",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Select the run of equal values below",
+       "proc": "XC_SelectMatchingBelow",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Select the run of equal values around this cell",
+       "proc": "XC_SelectMatchingInColumn",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Stretch selection down to the last used row",
+       "proc": "XC_ExtendToLowestUsedRow",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Stretch selection right to the last used column",
+       "proc": "XC_ExtendToRightmostUsedColumn",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Jump to the first cell that differs",
+       "proc": "XC_JumpToFirstDifferent",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Select the cell(s) holding the smallest value",
+       "proc": "XC_SelectLowestValue",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Select the cell(s) holding the largest value",
+       "proc": "XC_SelectHighestValue",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Select formulas that return errors",
+       "proc": "XC_SelectFormulaErrors",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Back to the previous sheet",
+       "proc": "XC_SwitchToPreviousSheet",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Select all sheets",
+       "proc": "XC_SelectAllSheets",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Select all shapes and objects",
+       "proc": "XC_SelectAllObjects",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Preview the selection",
+       "proc": "XC_PrintPreviewSelection",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Print the selection",
+       "proc": "XC_PrintSelection",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Repeat this selection on every sheet",
+       "proc": "XC_ApplySelectionToAllSheets",
+       "module": "modSelect.bas"
+      }
+     ]
+    },
+    {
+     "name": "Layout & Printing",
+     "tools": [
+      {
+       "name": "Apply this sheet's page setup to other sheets",
+       "proc": "XC_CopyPageSetup",
+       "module": "modSheets.bas",
+       "asks": true
+      },
+      {
+       "name": "Stamp the file path into a cell, header or footer",
+       "proc": "XC_InsertFilePath",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "Wipe headers and footers on selected sheets",
+       "proc": "XC_ClearHeadersFooters",
+       "module": "modFormatLayout.bas"
+      },
+      {
+       "name": "Separate groups where a column's value changes",
+       "proc": "XC_InsertVisualBreaks",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Wrap one column into a grid",
+       "proc": "XC_ReshapeColumnToTable",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Lay a long list out side by side for printing",
+       "proc": "XC_SplitLongDataset",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Wrap text on",
+       "proc": "XC_WrapText",
+       "module": "modFormatLayout.bas"
+      },
+      {
+       "name": "Wrap text off",
+       "proc": "XC_UnwrapText",
+       "module": "modFormatLayout.bas"
+      },
+      {
+       "name": "Set cell size in cm, inches or pixels",
+       "proc": "XC_SetCellSize",
+       "module": "modColsRows.bas",
+       "asks": true
+      },
+      {
+       "name": "Box the data on every printed page",
+       "proc": "XC_BorderAroundPrintedPages",
+       "module": "modFormatLayout.bas"
+      },
+      {
+       "name": "Remove inner borders",
+       "proc": "XC_RemoveInsideBorders",
+       "module": "modFormatLayout.bas"
+      },
+      {
+       "name": "Show N significant decimals",
+       "proc": "XC_SignificantDecimals",
+       "module": "modNumbersDates.bas",
+       "asks": true
+      },
+      {
+       "name": "Subscript the digits in chemical formulas",
+       "proc": "XC_SubscriptChemical",
+       "module": "modText.bas"
+      },
+      {
+       "name": "Unmerge cells",
+       "proc": "XC_UnmergeCells",
+       "module": "modFormatLayout.bas"
+      },
+      {
+       "name": "Center across the selection (no merge)",
+       "proc": "XC_CenterAcrossSelection",
+       "module": "modFormatLayout.bas"
+      },
+      {
+       "name": "Scrub cells: spaces, junk characters, text numbers",
+       "proc": "XC_CleanUpData",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Delete unused cell styles",
+       "proc": "XC_RemoveUnusedStyles",
+       "module": "modSheets.bas"
+      },
+      {
+       "name": "Remove data validation",
+       "proc": "XC_RemoveDataValidation",
+       "module": "modFormatLayout.bas"
+      },
+      {
+       "name": "Remove conditional formatting",
+       "proc": "XC_RemoveConditionalFormatting",
+       "module": "modFormatLayout.bas"
+      },
+      {
+       "name": "Bake conditional formats into real formats",
+       "proc": "XC_FreezeConditionalFormatting",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Count repeats, optionally color them",
+       "proc": "XC_CountDuplicates",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Color each group of repeats differently",
+       "proc": "XC_HighlightDuplicateSets",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Copy only chosen format attributes to a range",
+       "proc": "XC_CopyCertainFormatting",
+       "module": "modFormatLayout.bas",
+       "asks": true
+      },
+      {
+       "name": "Strip formatting back to Normal",
+       "proc": "XC_ResetToNormalStyle",
+       "module": "modFormatLayout.bas"
+      }
+     ]
+    },
+    {
+     "name": "Shapes & Notes",
+     "tools": [
+      {
+       "name": "Notes manager: list, resize, re-author, replace, delete",
+       "proc": "XC_ManageComments",
+       "module": "modObjects.bas",
+       "asks": true
+      },
+      {
+       "name": "Put the cell's value or formula into its note",
+       "proc": "XC_AddValueToComment",
+       "module": "modObjects.bas",
+       "asks": true
+      },
+      {
+       "name": "Select all shapes and objects",
+       "proc": "XC_SelectAllObjects",
+       "module": "modSelect.bas"
+      },
+      {
+       "name": "Delete all shapes, pictures and charts on selected sheets",
+       "proc": "XC_DeleteAllObjects",
+       "module": "modObjects.bas"
+      },
+      {
+       "name": "Delete form buttons on selected sheets",
+       "proc": "XC_DeleteFormButtons",
+       "module": "modObjects.bas"
+      },
+      {
+       "name": "Scale pictures and objects by percent",
+       "proc": "XC_ResizePictures",
+       "module": "modObjects.bas",
+       "asks": true
+      },
+      {
+       "name": "Remove outline from selected shapes",
+       "proc": "XC_RemoveShapeBorders",
+       "module": "modObjects.bas"
+      }
+     ]
+    },
+    {
+     "name": "Links & Web",
+     "tools": [
+      {
+       "name": "Scrub cells: spaces, junk characters, text numbers",
+       "proc": "XC_CleanUpData",
+       "module": "modText.bas",
+       "asks": true
+      },
+      {
+       "name": "Strip HTML tags",
+       "proc": "XC_RemoveHtmlTags",
+       "module": "modWebData.bas",
+       "asks": true
+      },
+      {
+       "name": "Decode %20-style and &amp;-style text",
+       "proc": "XC_DecodeUrlHtml",
+       "module": "modWebData.bas"
+      },
+      {
+       "name": "Pull link targets out of cells and shapes",
+       "proc": "XC_ExtractHyperlinkAddresses",
+       "module": "modWebData.bas",
+       "asks": true
+      },
+      {
+       "name": "Turn cell text into hyperlinks",
+       "proc": "XC_CreateHyperlinks",
+       "module": "modWebData.bas",
+       "asks": true
+      },
+      {
+       "name": "Rewrite hyperlinks as =HYPERLINK() formulas",
+       "proc": "XC_HyperlinksToFormulas",
+       "module": "modWebData.bas"
+      },
+      {
+       "name": "Remove hyperlinks",
+       "proc": "XC_RemoveHyperlinks",
+       "module": "modWebData.bas"
+      },
+      {
+       "name": "Copy as an HTML table",
+       "proc": "XC_CopyAsHtmlTable",
+       "module": "modWebData.bas",
+       "asks": true
+      }
+     ]
+    },
+    {
+     "name": "Inspect & List",
+     "tools": [
+      {
+       "name": "Selection statistics: counts, sum, min, max, distinct",
+       "proc": "XC_AnalyzeCells",
+       "module": "modInfo.bas",
+       "asks": true
+      },
+      {
+       "name": "Workbook and selection facts",
+       "proc": "XC_WorkbookDetails",
+       "module": "modInfo.bas",
+       "asks": true
+      },
+      {
+       "name": "Copy the full file path",
+       "proc": "XC_CopyPathToClipboard",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "Which printed page is this cell on?",
+       "proc": "XC_PrintedPageNumber",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "Count repeats, optionally color them",
+       "proc": "XC_CountDuplicates",
+       "module": "modRange.bas",
+       "asks": true
+      },
+      {
+       "name": "Color each group of repeats differently",
+       "proc": "XC_HighlightDuplicateSets",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Count distinct values",
+       "proc": "XC_CountDistinct",
+       "module": "modInfo.bas",
+       "asks": true
+      },
+      {
+       "name": "Character, word and line counts",
+       "proc": "XC_CountCharacters",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "List document properties",
+       "proc": "XC_ListDocumentProperties",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "List defined names and tables",
+       "proc": "XC_ListNames",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "List sheet names",
+       "proc": "XC_ListSheetNames",
+       "module": "modInfo.bas",
+       "asks": true
+      },
+      {
+       "name": "List every formula",
+       "proc": "XC_ListAllFormulas",
+       "module": "modFormulas.bas"
+      },
+      {
+       "name": "Color map of cell types in a new workbook",
+       "proc": "XC_VisualMapOfCellTypes",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "List the files in a folder",
+       "proc": "XC_ListFilesInFolder",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "What is selected? (object type)",
+       "proc": "XC_DisplaySelectionType",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "Sheet counts by type",
+       "proc": "XC_CountSheets",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "Find broken references (#REF!)",
+       "proc": "XC_FindRefErrors",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "Find columns too narrow (####)",
+       "proc": "XC_FindHashColumns",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "Window and screen sizes",
+       "proc": "XC_ScreenResolution",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "Excel's separators and date order",
+       "proc": "XC_RegionalSettings",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "List installed add-ins",
+       "proc": "XC_ListAddins",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "List installed fonts with samples",
+       "proc": "XC_ListFonts",
+       "module": "modInfo.bas"
+      }
+     ]
+    },
+    {
+     "name": "Files",
+     "tools": [
+      {
+       "name": "Save and keep a timestamped copy",
+       "proc": "XC_SaveWithBackup",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Backup folder",
+       "proc": "XC_SetBackupFolder",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Save as, named after the active cell",
+       "proc": "XC_SaveAsFirstCellName",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Rename this file",
+       "proc": "XC_RenameCurrentFile",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Revert to the saved file",
+       "proc": "XC_ReopenWithoutSaving",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Save selection or sheet as a new file",
+       "proc": "XC_ExportSelectionOrSheet",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Save each sheet as its own file",
+       "proc": "XC_ExportSheetsSeparately",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Links to other workbooks: list, break, convert",
+       "proc": "XC_FindRemoveExternalRefs",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Set Excel's default folder",
+       "proc": "XC_ChangeDefaultFileLocation",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Open/save dialogs start in this file's folder",
+       "proc": "XC_TempDefaultToCurrentFolder",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Title bar: full path",
+       "proc": "XC_ShowPathInTitleBar",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Title bar: file name",
+       "proc": "XC_ShowNameInTitleBar",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Close this file and delete it from disk",
+       "proc": "XC_CloseAndDelete",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Close workbooks that have no unsaved changes",
+       "proc": "XC_CloseUnchanged",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Close chosen workbooks",
+       "proc": "XC_CloseMultiple",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Close every workbook, discard changes",
+       "proc": "XC_CloseAllWithoutSaving",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Pin this file to the recent list",
+       "proc": "XC_AddToRecentFiles",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Prune the recent files list",
+       "proc": "XC_ClearRecentFiles",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Save a copy without macros",
+       "proc": "XC_RemoveAllMacros",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Reveal this file in the file browser",
+       "proc": "XC_OpenFileLocation",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Resize Excel to a screen size",
+       "proc": "XC_ResizeExcelWindow",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Save, bypassing BeforeSave macros",
+       "proc": "XC_ForceSave",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "List installed add-ins",
+       "proc": "XC_ListAddins",
+       "module": "modInfo.bas"
+      },
+      {
+       "name": "Reload add-ins",
+       "proc": "XC_ReloadAddins",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "List the files in a folder",
+       "proc": "XC_ListFilesInFolder",
+       "module": "modFill.bas",
+       "asks": true
+      },
+      {
+       "name": "Build folders on disk from cell values",
+       "proc": "XC_CreateFolderStructure",
+       "module": "modFile.bas",
+       "asks": true
+      }
+     ]
+    },
+    {
+     "name": "Import",
+     "tools": [
+      {
+       "name": "Pull sheets in from another workbook",
+       "proc": "XC_ImportExcelFile",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Import delimited text with options",
+       "proc": "XC_ImportDelimitedCustom",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Import a dBASE file (not supported by modern Excel)",
+       "proc": "XC_ImportDbf",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Import space-separated text",
+       "proc": "XC_ImportSpaceDelimited",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Import tab-separated text",
+       "proc": "XC_ImportTabDelimited",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Import a CSV file",
+       "proc": "XC_ImportCsv",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Import pipe-separated text",
+       "proc": "XC_ImportPipeDelimited",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Import exclamation-separated text",
+       "proc": "XC_ImportExclamationDelimited",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Import text with Excel's wizard",
+       "proc": "XC_ImportTextWizard",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Stack several files into one sheet",
+       "proc": "XC_MergeImportMultiple",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "List the files in a folder",
+       "proc": "XC_ListFilesInFolder",
+       "module": "modFill.bas",
+       "asks": true
+      }
+     ]
+    },
+    {
+     "name": "Export",
+     "tools": [
+      {
+       "name": "Save selection or sheet as a new file",
+       "proc": "XC_ExportSelectionOrSheet",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Copy as an HTML table",
+       "proc": "XC_CopyAsHtmlTable",
+       "module": "modWebData.bas",
+       "asks": true
+      },
+      {
+       "name": "Save range or chart as PNG / JPG / GIF",
+       "proc": "XC_ExportAsImage",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Save each sheet as its own file",
+       "proc": "XC_ExportSheetsSeparately",
+       "module": "modImportExport.bas",
+       "asks": true
+      },
+      {
+       "name": "Copy as plain tab-separated text",
+       "proc": "XC_CopyValuesToClipboard",
+       "module": "modImportExport.bas"
+      },
+      {
+       "name": "Copy the sum to the clipboard",
+       "proc": "XC_CopySumToClipboard",
+       "module": "modImportExport.bas"
+      },
+      {
+       "name": "Copy the average to the clipboard",
+       "proc": "XC_CopyAverageToClipboard",
+       "module": "modImportExport.bas"
+      },
+      {
+       "name": "Copy as bitmap (screen look)",
+       "proc": "XC_CopyAsBitmap",
+       "module": "modImportExport.bas"
+      },
+      {
+       "name": "Copy as picture (screen look)",
+       "proc": "XC_CopyAsPictureScreen",
+       "module": "modImportExport.bas"
+      },
+      {
+       "name": "Copy as picture (printed look)",
+       "proc": "XC_CopyAsPicturePrinted",
+       "module": "modImportExport.bas"
+      }
+     ]
+    },
+    {
+     "name": "Launch",
+     "tools": [
+      {
+       "name": "Character map (Windows)",
+       "proc": "XC_OpenCharMap",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Calculator",
+       "proc": "XC_OpenCalculator",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "File browser",
+       "proc": "XC_OpenExplorer",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Reveal this file in the file browser",
+       "proc": "XC_OpenFileLocation",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Plain-text editor",
+       "proc": "XC_OpenNotepad",
+       "module": "modFile.bas"
+      }
+     ]
+    },
+    {
+     "name": "XcelCraft",
+     "tools": [
+      {
+       "name": "Keyboard shortcuts",
+       "proc": "XC_ShortcutManager",
+       "module": "modShortcuts.bas",
+       "asks": true
+      },
+      {
+       "name": "List keyboard shortcuts",
+       "proc": "XC_ListShortcuts",
+       "module": "modShortcuts.bas"
+      },
+      {
+       "name": "Keyboard shortcuts on/off",
+       "proc": "XC_ToggleShortcuts",
+       "module": "modShortcuts.bas"
+      },
+      {
+       "name": "Search for a tool",
+       "proc": "XC_FindAndRunTool",
+       "module": "modMenu.bas",
+       "asks": true,
+       "onkey": "^%+f",
+       "keys": "Ctrl+Alt+Shift+F"
+      },
+      {
+       "name": "Run the last tool again",
+       "proc": "XC_RunLastTool",
+       "module": "modMenu.bas",
+       "onkey": "^%+z",
+       "keys": "Ctrl+Alt+Shift+Z"
+      },
+      {
+       "name": "Undo the last tool",
+       "proc": "XC_UndoLastTool",
+       "module": "modCore.bas",
+       "onkey": "^%+u",
+       "keys": "Ctrl+Alt+Shift+U"
+      },
+      {
+       "name": "Quiet mode on/off (fewer result pop-ups)",
+       "proc": "XC_ToggleQuietMode",
+       "module": "modMenu.bas"
+      },
+      {
+       "name": "Rebuild the menu",
+       "proc": "BuildMenu",
+       "module": "modMenu.bas"
+      },
+      {
+       "name": "About",
+       "proc": "XC_About",
+       "module": "modMenu.bas",
+       "asks": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Modeling",
+   "categories": [
+    {
+     "name": "Financial",
+     "tools": [
+      {
+       "name": "Insert a growth-rate (CAGR) formula",
+       "proc": "XC_QuickCagr",
+       "module": "modFinModel.bas",
+       "onkey": "^%+g",
+       "keys": "Ctrl+Alt+Shift+G"
+      },
+      {
+       "name": "Add min / max / mean / median rows",
+       "proc": "XC_SummaryStatistics",
+       "module": "modFinModel.bas",
+       "onkey": "^%+s",
+       "keys": "Ctrl+Alt+Shift+S"
+      },
+      {
+       "name": "Summary rows: which statistics",
+       "proc": "XC_SummaryStatisticsSettings",
+       "module": "modFinModel.bas",
+       "asks": true
+      },
+      {
+       "name": "Duplicate a block N times",
+       "proc": "XC_DuplicateBlock",
+       "module": "modFinModel.bas",
+       "asks": true
+      },
+      {
+       "name": "Sum duplicated blocks back into the original",
+       "proc": "XC_SumCopies",
+       "module": "modFinModel.bas",
+       "asks": true
+      },
+      {
+       "name": "Insert a symbol",
+       "proc": "XC_InsertSymbol",
+       "module": "modFinModel.bas",
+       "asks": true
+      }
+     ]
+    },
+    {
+     "name": "Auditing",
+     "tools": [
+      {
+       "name": "Precedents: list and jump",
+       "proc": "XC_PrecedentsList",
+       "module": "modAudit.bas",
+       "asks": true,
+       "onkey": "^[",
+       "keys": "Ctrl+["
+      },
+      {
+       "name": "Dependents: list and jump",
+       "proc": "XC_DependentsList",
+       "module": "modAudit.bas",
+       "asks": true,
+       "onkey": "^]",
+       "keys": "Ctrl+]"
+      },
+      {
+       "name": "Step into a precedent",
+       "proc": "XC_TraceIn",
+       "module": "modAudit.bas",
+       "onkey": "^%+{LEFT}",
+       "keys": "Ctrl+Alt+Shift+←"
+      },
+      {
+       "name": "Step back out",
+       "proc": "XC_TraceOut",
+       "module": "modAudit.bas",
+       "onkey": "^%+{RIGHT}",
+       "keys": "Ctrl+Alt+Shift+→"
+      },
+      {
+       "name": "Arrows to precedents (toggle)",
+       "proc": "XC_ShowAllPrecedents",
+       "module": "modAudit.bas",
+       "onkey": "^+{F2}",
+       "keys": "Ctrl+Shift+F2"
+      },
+      {
+       "name": "Arrows to dependents (toggle)",
+       "proc": "XC_ShowAllDependents",
+       "module": "modAudit.bas",
+       "onkey": "^+{F3}",
+       "keys": "Ctrl+Shift+F3"
+      },
+      {
+       "name": "Remove audit arrows",
+       "proc": "XC_ClearArrows",
+       "module": "modAudit.bas",
+       "onkey": "^+{F4}",
+       "keys": "Ctrl+Shift+F4"
+      },
+      {
+       "name": "Find formulas that break their row/column pattern",
+       "proc": "XC_FormulaConsistency",
+       "module": "modAudit.bas",
+       "asks": true
+      },
+      {
+       "name": "Model audit report",
+       "proc": "XC_ModelAudit",
+       "module": "modAudit.bas",
+       "asks": true
+      }
+     ]
+    },
+    {
+     "name": "Charts",
+     "tools": [
+      {
+       "name": "Cycle color of the selected chart element",
+       "proc": "XC_ChartColorCycle",
+       "module": "modCharts.bas",
+       "onkey": "^%+h",
+       "keys": "Ctrl+Alt+Shift+H"
+      },
+      {
+       "name": "Recolor chart series from the palette",
+       "proc": "XC_RecolorSeries",
+       "module": "modCharts.bas"
+      },
+      {
+       "name": "Chart color palette",
+       "proc": "XC_ChartColorSettings",
+       "module": "modCharts.bas",
+       "asks": true
+      },
+      {
+       "name": "Waterfall chart",
+       "proc": "XC_WaterfallChart",
+       "module": "modCharts.bas",
+       "asks": true
+      },
+      {
+       "name": "Floating-bar range chart",
+       "proc": "XC_RangeBarChart",
+       "module": "modCharts.bas"
+      },
+      {
+       "name": "Column + line chart on two axes",
+       "proc": "XC_ComboChart",
+       "module": "modCharts.bas",
+       "asks": true
+      }
+     ]
+    },
+    {
+     "name": "Files",
+     "tools": [
+      {
+       "name": "Save",
+       "proc": "XC_QuickSave",
+       "module": "modFile.bas",
+       "onkey": "^%s",
+       "keys": "Ctrl+Alt+S"
+      },
+      {
+       "name": "Save as",
+       "proc": "XC_QuickSaveAs",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Save all workbooks",
+       "proc": "XC_QuickSaveAll",
+       "module": "modFile.bas"
+      },
+      {
+       "name": "Save as the next version number",
+       "proc": "XC_SaveNextVersion",
+       "module": "modFile.bas",
+       "asks": true,
+       "onkey": "^%+{F12}",
+       "keys": "Ctrl+Alt+Shift+F12"
+      },
+      {
+       "name": "Delete notes and comments",
+       "proc": "XC_DeleteCommentsNotes",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Slim the file: used ranges, styles, names",
+       "proc": "XC_OptimizeFile",
+       "module": "modFile.bas",
+       "asks": true
+      },
+      {
+       "name": "Unload the add-in",
+       "proc": "XC_UnloadAddin",
+       "module": "modFile.bas"
+      }
+     ]
+    },
+    {
+     "name": "Formulas",
+     "tools": [
+      {
+       "name": "Fill right as far as the neighbours go",
+       "proc": "XC_SmartFillRight",
+       "module": "modModeling.bas",
+       "onkey": "^+r",
+       "keys": "Ctrl+Shift+R"
+      },
+      {
+       "name": "Fill down as far as the neighbours go",
+       "proc": "XC_SmartFillDown",
+       "module": "modModeling.bas",
+       "onkey": "^+d",
+       "keys": "Ctrl+Shift+D"
+      },
+      {
+       "name": "Guard formulas with IFERROR, ask for fallback (toggle)",
+       "proc": "XC_ErrorGuard",
+       "module": "modModeling.bas",
+       "asks": true
+      },
+      {
+       "name": "Guard formulas with IFERROR, saved fallback (toggle)",
+       "proc": "XC_ErrorGuardQuick",
+       "module": "modModeling.bas",
+       "onkey": "^+e",
+       "keys": "Ctrl+Shift+E"
+      },
+      {
+       "name": "Tidy formulas: drop stray spaces and this-sheet prefixes",
+       "proc": "XC_CleanCells",
+       "module": "modModeling.bas",
+       "onkey": "^%+x",
+       "keys": "Ctrl+Alt+Shift+X"
+      },
+      {
+       "name": "Cycle reference anchoring (A1 > $A$1 > A$1 > $A1)",
+       "proc": "XC_AnchorFormula",
+       "module": "modModeling.bas",
+       "onkey": "^{F2}",
+       "keys": "Ctrl+F2"
+      },
+      {
+       "name": "Expand defined names into cell references",
+       "proc": "XC_ReplaceNamesWithRefs",
+       "module": "modRange.bas"
+      },
+      {
+       "name": "Show formulas as text (apostrophe toggle)",
+       "proc": "XC_CommentCells",
+       "module": "modModeling.bas",
+       "onkey": "^%'",
+       "keys": "Ctrl+Alt+'"
+      },
+      {
+       "name": "Negate numbers; wrap formulas in -( )",
+       "proc": "XC_FlipSign",
+       "module": "modModeling.bas",
+       "onkey": "^+n",
+       "keys": "Ctrl+Shift+N"
+      },
+      {
+       "name": "Wrap the formula in parentheses",
+       "proc": "XC_WrapParentheses",
+       "module": "modModeling.bas",
+       "onkey": "^%9",
+       "keys": "Ctrl+Alt+9"
+      },
+      {
+       "name": "Replace formulas with values and recolor",
+       "proc": "XC_HardcodeSelection",
+       "module": "modModeling.bas",
+       "onkey": "^#",
+       "keys": "Ctrl+Shift+3"
+      },
+      {
+       "name": "Replace formulas using a given function with values",
+       "proc": "XC_HardcodeFunction",
+       "module": "modModeling.bas",
+       "asks": true
+      },
+      {
+       "name": "Detach sheet: freeze off-sheet references to values",
+       "proc": "XC_DetachSheet",
+       "module": "modModeling.bas"
+      },
+      {
+       "name": "Resolve lookups to direct references",
+       "proc": "XC_ResolveLookups",
+       "module": "modModeling.bas",
+       "onkey": "^%+v",
+       "keys": "Ctrl+Alt+Shift+V"
+      },
+      {
+       "name": "Resolve lookups: functions to handle",
+       "proc": "XC_ResolveLookupsSettings",
+       "module": "modModeling.bas",
+       "asks": true
+      },
+      {
+       "name": "Replace a function with what it returns",
+       "proc": "XC_EvaluateFunction",
+       "module": "modModeling.bas",
+       "asks": true
+      },
+      {
+       "name": "Turn a TRANSPOSE array into direct links",
+       "proc": "XC_EvaluateTranspose",
+       "module": "modModeling.bas",
+       "onkey": "^%+t",
+       "keys": "Ctrl+Alt+Shift+T"
+      },
+      {
+       "name": "Quick validation rules (toggle, number, date, %)",
+       "proc": "XC_DataValidationPreset",
+       "module": "modModeling.bas",
+       "asks": true
+      },
+      {
+       "name": "Jump to the smallest value",
+       "proc": "XC_GoToMin",
+       "module": "modModeling.bas",
+       "onkey": "^%+,",
+       "keys": "Ctrl+Alt+Shift+,"
+      },
+      {
+       "name": "Jump to the largest value",
+       "proc": "XC_GoToMax",
+       "module": "modModeling.bas",
+       "onkey": "^%+.",
+       "keys": "Ctrl+Alt+Shift+."
+      }
+     ]
+    },
+    {
+     "name": "Paste",
+     "tools": [
+      {
+       "name": "Mark source range for the paste tools",
+       "proc": "XC_CopySource",
+       "module": "modRange.bas",
+       "onkey": "^%c",
+       "keys": "Ctrl+Alt+C"
+      },
+      {
+       "name": "Paste formulas verbatim",
+       "proc": "XC_PasteVerbatim",
+       "module": "modModeling.bas",
+       "onkey": "^%e",
+       "keys": "Ctrl+Alt+E"
+      },
+      {
+       "name": "Paste number formats only",
+       "proc": "XC_PasteNumberFormats",
+       "module": "modModeling.bas",
+       "onkey": "^%f",
+       "keys": "Ctrl+Alt+F"
+      },
+      {
+       "name": "Paste transposed (links / verbatim / values)",
+       "proc": "XC_PasteTranspose",
+       "module": "modModeling.bas",
+       "asks": true,
+       "onkey": "^%t",
+       "keys": "Ctrl+Alt+T"
+      },
+      {
+       "name": "Paste keeping links within the block",
+       "proc": "XC_PasteKeepInternalLinks",
+       "module": "modModeling.bas",
+       "onkey": "^%d",
+       "keys": "Ctrl+Alt+D"
+      },
+      {
+       "name": "Paste as links to the source",
+       "proc": "XC_PasteLinks",
+       "module": "modModeling.bas",
+       "onkey": "^%l",
+       "keys": "Ctrl+Alt+L"
+      },
+      {
+       "name": "Insert cells and paste",
+       "proc": "XC_PasteInsert",
+       "module": "modModeling.bas",
+       "asks": true
+      },
+      {
+       "name": "Capture row heights / column widths / outline",
+       "proc": "XC_CopyRowColInfo",
+       "module": "modModeling.bas",
+       "onkey": "^%j",
+       "keys": "Ctrl+Alt+J"
+      },
+      {
+       "name": "Apply captured row / column sizing",
+       "proc": "XC_PasteRowColInfo",
+       "module": "modModeling.bas",
+       "onkey": "^%k",
+       "keys": "Ctrl+Alt+K"
+      }
+     ]
+    },
+    {
+     "name": "Rows, Columns & View",
+     "tools": [
+      {
+       "name": "Group rows",
+       "proc": "XC_GroupRows",
+       "module": "modModeling.bas"
+      },
+      {
+       "name": "Ungroup rows",
+       "proc": "XC_UngroupRows",
+       "module": "modModeling.bas"
+      },
+      {
+       "name": "Expand all row groups",
+       "proc": "XC_ExpandAllRows",
+       "module": "modModeling.bas"
+      },
+      {
+       "name": "Collapse all row groups",
+       "proc": "XC_CollapseAllRows",
+       "module": "modModeling.bas"
+      },
+      {
+       "name": "Group columns",
+       "proc": "XC_GroupColumns",
+       "module": "modModeling.bas"
+      },
+      {
+       "name": "Ungroup columns",
+       "proc": "XC_UngroupColumns",
+       "module": "modModeling.bas"
+      },
+      {
+       "name": "Expand all column groups",
+       "proc": "XC_ExpandAllColumns",
+       "module": "modModeling.bas"
+      },
+      {
+       "name": "Collapse all column groups",
+       "proc": "XC_CollapseAllColumns",
+       "module": "modModeling.bas"
+      },
+      {
+       "name": "Gridlines on/off",
+       "proc": "XC_ToggleGridlines",
+       "module": "modModeling.bas",
+       "onkey": "^%g",
+       "keys": "Ctrl+Alt+G"
+      },
+      {
+       "name": "Hide page-break lines",
+       "proc": "XC_HidePageBreaks",
+       "module": "modModeling.bas"
+      },
+      {
+       "name": "Zoom in",
+       "proc": "XC_ZoomIn",
+       "module": "modModeling.bas"
+      },
+      {
+       "name": "Zoom out",
+       "proc": "XC_ZoomOut",
+       "module": "modModeling.bas"
+      }
+     ]
+    },
+    {
+     "name": "Format: Numbers",
+     "tools": [
+      {
+       "name": "Cycle number formats",
+       "proc": "XC_NumGeneralCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^!",
+       "keys": "Ctrl+Shift+1"
+      },
+      {
+       "name": "Cycle multiple (x) formats",
+       "proc": "XC_NumMultipleCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^*",
+       "keys": "Ctrl+Shift+8"
+      },
+      {
+       "name": "Cycle currency formats",
+       "proc": "XC_NumCurrencyCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^$",
+       "keys": "Ctrl+Shift+4"
+      },
+      {
+       "name": "Cycle foreign currency formats",
+       "proc": "XC_NumForeignCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%$",
+       "keys": "Ctrl+Alt+Shift+4"
+      },
+      {
+       "name": "Cycle date formats",
+       "proc": "XC_NumDateCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^@",
+       "keys": "Ctrl+Shift+2"
+      },
+      {
+       "name": "Cycle yes/no formats",
+       "proc": "XC_NumBinaryCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+y",
+       "keys": "Ctrl+Shift+Y"
+      },
+      {
+       "name": "Cycle percent formats",
+       "proc": "XC_NumPercentCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^{%}",
+       "keys": "Ctrl+{%}"
+      },
+      {
+       "name": "Cycle ratio formats",
+       "proc": "XC_NumRatioCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "%+;",
+       "keys": "Alt+Shift+;"
+      },
+      {
+       "name": "One more decimal",
+       "proc": "XC_IncreaseDecimals",
+       "module": "modFormatCycles.bas",
+       "onkey": "^,",
+       "keys": "Ctrl+,"
+      },
+      {
+       "name": "One fewer decimal",
+       "proc": "XC_DecreaseDecimals",
+       "module": "modFormatCycles.bas",
+       "onkey": "^.",
+       "keys": "Ctrl+."
+      },
+      {
+       "name": "Divide inputs by 10",
+       "proc": "XC_ShiftDecimalLeft",
+       "module": "modFormatCycles.bas",
+       "onkey": "%+,",
+       "keys": "Alt+Shift+,"
+      },
+      {
+       "name": "Multiply inputs by 10",
+       "proc": "XC_ShiftDecimalRight",
+       "module": "modFormatCycles.bas",
+       "onkey": "%+.",
+       "keys": "Alt+Shift+."
+      }
+     ]
+    },
+    {
+     "name": "Format: Colors",
+     "tools": [
+      {
+       "name": "Toggle input blue / default font color",
+       "proc": "XC_InputColorToggle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+b",
+       "keys": "Ctrl+Shift+B"
+      },
+      {
+       "name": "Cycle font color",
+       "proc": "XC_FontColorCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+f",
+       "keys": "Ctrl+Shift+F"
+      },
+      {
+       "name": "Cycle fill color",
+       "proc": "XC_FillColorCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+k",
+       "keys": "Ctrl+Shift+K"
+      },
+      {
+       "name": "Cycle the color of existing borders",
+       "proc": "XC_BorderColorCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%+k",
+       "keys": "Ctrl+Alt+Shift+K"
+      },
+      {
+       "name": "Color selection by cell type (inputs, formulas, links)",
+       "proc": "XC_TypeColorSelection",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%+a",
+       "keys": "Ctrl+Alt+Shift+A",
+       "demo": {
+        "scene": "fill",
+        "caption": "Color the selection by cell type: inputs, formulas and links each get their colour."
+       }
+      },
+      {
+       "name": "Color the whole sheet by cell type",
+       "proc": "XC_TypeColorSheet",
+       "module": "modFormatCycles.bas"
+      },
+      {
+       "name": "Color the whole workbook by cell type",
+       "proc": "XC_TypeColorWorkbook",
+       "module": "modFormatCycles.bas"
+      },
+      {
+       "name": "Cycle through the cell-type colors",
+       "proc": "XC_TypeColorCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%a",
+       "keys": "Ctrl+Alt+A"
+      },
+      {
+       "name": "Shade every other row (toggle)",
+       "proc": "XC_AlternateRowShading",
+       "module": "modFormatCycles.bas"
+      },
+      {
+       "name": "Shade every other column (toggle)",
+       "proc": "XC_AlternateColumnShading",
+       "module": "modFormatCycles.bas"
+      }
+     ]
+    },
+    {
+     "name": "Format: Borders",
+     "tools": [
+      {
+       "name": "Cycle bottom border style",
+       "proc": "XC_BottomBorderCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%b",
+       "keys": "Ctrl+Alt+B"
+      },
+      {
+       "name": "Cycle top border style",
+       "proc": "XC_TopBorderCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%u",
+       "keys": "Ctrl+Alt+U"
+      },
+      {
+       "name": "Cycle left border style",
+       "proc": "XC_LeftBorderCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%{LEFT}",
+       "keys": "Ctrl+Alt+←"
+      },
+      {
+       "name": "Cycle right border style",
+       "proc": "XC_RightBorderCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%{RIGHT}",
+       "keys": "Ctrl+Alt+→"
+      },
+      {
+       "name": "Cycle outline border style",
+       "proc": "XC_OutsideBorderCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+o",
+       "keys": "Ctrl+Shift+O"
+      },
+      {
+       "name": "Remove borders",
+       "proc": "XC_NoBorder",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%n",
+       "keys": "Ctrl+Alt+N"
+      },
+      {
+       "name": "Line above totals (toggle)",
+       "proc": "XC_TotalLine",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%=",
+       "keys": "Ctrl+Alt+="
+      }
+     ]
+    },
+    {
+     "name": "Format: Fonts & Alignment",
+     "tools": [
+      {
+       "name": "Cycle underline style",
+       "proc": "XC_UnderlineCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+u",
+       "keys": "Ctrl+Shift+U"
+      },
+      {
+       "name": "Cycle font size",
+       "proc": "XC_FontSizeCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+s",
+       "keys": "Ctrl+Shift+S"
+      },
+      {
+       "name": "Larger font",
+       "proc": "XC_IncreaseFont",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%+{UP}",
+       "keys": "Ctrl+Alt+Shift+↑"
+      },
+      {
+       "name": "Smaller font",
+       "proc": "XC_DecreaseFont",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%+{DOWN}",
+       "keys": "Ctrl+Alt+Shift+↓"
+      },
+      {
+       "name": "Cycle horizontal alignment",
+       "proc": "XC_HorizontalAlignCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+h",
+       "keys": "Ctrl+Shift+H"
+      },
+      {
+       "name": "Cycle indent",
+       "proc": "XC_LeftIndentCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+i",
+       "keys": "Ctrl+Shift+I"
+      },
+      {
+       "name": "Wrap text (toggle)",
+       "proc": "XC_WrapTextToggle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+w",
+       "keys": "Ctrl+Shift+W"
+      },
+      {
+       "name": "Cycle text case",
+       "proc": "XC_CaseCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+c",
+       "keys": "Ctrl+Shift+C"
+      },
+      {
+       "name": "Dot leaders after text (toggle)",
+       "proc": "XC_DotLeaders",
+       "module": "modFormatCycles.bas",
+       "onkey": "^+l",
+       "keys": "Ctrl+Shift+L"
+      },
+      {
+       "name": "Cycle list bullets and numbering",
+       "proc": "XC_ListCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%+l",
+       "keys": "Ctrl+Alt+Shift+L"
+      },
+      {
+       "name": "Cycle footnote marker (1)-(9)",
+       "proc": "XC_FootnoteCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%+n",
+       "keys": "Ctrl+Alt+Shift+N"
+      },
+      {
+       "name": "Cycle row height",
+       "proc": "XC_RowHeightCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%+r",
+       "keys": "Ctrl+Alt+Shift+R"
+      },
+      {
+       "name": "Cycle column width",
+       "proc": "XC_ColumnWidthCycle",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%+c",
+       "keys": "Ctrl+Alt+Shift+C"
+      },
+      {
+       "name": "Capture this cell's style",
+       "proc": "XC_CapturePaintbrush",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%+p",
+       "keys": "Ctrl+Alt+Shift+P"
+      },
+      {
+       "name": "Apply the captured style",
+       "proc": "XC_ApplyPaintbrush",
+       "module": "modFormatCycles.bas",
+       "onkey": "^%p",
+       "keys": "Ctrl+Alt+P"
+      },
+      {
+       "name": "Edit a cycle's steps",
+       "proc": "XC_CustomizeCycle",
+       "module": "modFormatCycles.bas",
+       "asks": true
+      },
+      {
+       "name": "Formatting options",
+       "proc": "XC_FormatOptions",
+       "module": "modFormatCycles.bas",
+       "asks": true
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "modules": [
+  {
+   "file": "modAudit.bas",
+   "tools": 9
+  },
+  {
+   "file": "modCharts.bas",
+   "tools": 6
+  },
+  {
+   "file": "modColsRows.bas",
+   "tools": 16
+  },
+  {
+   "file": "modCore.bas",
+   "tools": 1
+  },
+  {
+   "file": "modFile.bas",
+   "tools": 33
+  },
+  {
+   "file": "modFill.bas",
+   "tools": 14
+  },
+  {
+   "file": "modFinModel.bas",
+   "tools": 6
+  },
+  {
+   "file": "modFormatCycles.bas",
+   "tools": 46
+  },
+  {
+   "file": "modFormatLayout.bas",
+   "tools": 11
+  },
+  {
+   "file": "modFormulas.bas",
+   "tools": 5
+  },
+  {
+   "file": "modImportExport.bas",
+   "tools": 19
+  },
+  {
+   "file": "modInfo.bas",
+   "tools": 17
+  },
+  {
+   "file": "modMenu.bas",
+   "tools": 5
+  },
+  {
+   "file": "modModeling.bas",
+   "tools": 39
+  },
+  {
+   "file": "modNumbersDates.bas",
+   "tools": 11
+  },
+  {
+   "file": "modObjects.bas",
+   "tools": 6
+  },
+  {
+   "file": "modRange.bas",
+   "tools": 24
+  },
+  {
+   "file": "modSelect.bas",
+   "tools": 18
+  },
+  {
+   "file": "modSheets.bas",
+   "tools": 26
+  },
+  {
+   "file": "modShortcuts.bas",
+   "tools": 3
+  },
+  {
+   "file": "modText.bas",
+   "tools": 27
+  },
+  {
+   "file": "modWebData.bas",
+   "tools": 7
+  },
+  {
+   "file": "clsAppEvents.cls",
+   "tools": 0
+  }
+ ],
+ "counts": {
+  "tools": 349,
+  "entries": 403,
+  "categories": 28,
+  "shortcuts": 78,
+  "modules": 23
+ }
+}

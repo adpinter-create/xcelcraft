@@ -1,0 +1,9 @@
+{
+  "demos": {
+    "XC_SelectCellsByCriteria": {"scene": "select", "caption": "Select cells that pass a test, from the Selection menu or Ctrl+Alt+Shift+Q."},
+    "XC_TypeColorSelection": {"scene": "fill", "caption": "Color the selection by cell type: inputs, formulas and links each get their colour."},
+    "XC_UnhideRowsCols": {"scene": "hide", "caption": "Hidden rows and columns come back, all of them or the ones you choose.", "caption2": "Everything is back in view."},
+    "XC_ClearDuplicates": {"scene": "clear", "caption": "Repeat values are blanked out and the first of each stays."}
+  },
+  "hide": []
+}
