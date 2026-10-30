@@ -2605,5 +2605,14 @@
   "categories": 28,
   "shortcuts": 78,
   "modules": 23
- }
+ },
+ "downloads": [
+  {
+   "kind": "source",
+   "href": "download/XcelCraft-0.1.0-beta-source.zip",
+   "file": "XcelCraft-0.1.0-beta-source.zip",
+   "bytes": 142201,
+   "sha256": "39e02b60bbd3a536d8b82cf86c77ed1de8f891a5ef0f4f0dfcf1a6b860b5e5f3"
+  }
+ ]
 }

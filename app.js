@@ -113,12 +113,23 @@
   if (nKeys) facts.push(`<span><b>${nKeys}</b> shortcuts</span>`);
   facts.push(`<span><b>MIT</b> licensed</span>`);
   $("#facts").innerHTML = facts.join("");
+  const dl = CAT.downloads || [];
+  const kb = n => n >= 1048576 ? (n / 1048576).toFixed(1) + " MB" : Math.max(1, Math.round(n / 1024)) + " KB";
+  const local = dl.find(d => d.kind === "xlam"), src = dl.find(d => d.kind === "source");
+  const xlam = CAT.download ? { href: CAT.download, file: CAT.download.split("/").pop(), ext: true } : local;
+  const link = (d, label, cls) => `<a class="${cls}" href="${esc(d.href)}"${d.ext ? "" : ` download="${esc(d.file)}"`}${d.sha256 ? ` title="SHA-256 ${esc(d.sha256)}"` : ""}>${label}</a>`;
   const ctas = [];
-  if (CAT.download) ctas.push(`<a class="btn" href="${esc(CAT.download)}">Download the add-in</a>`);
+  if (xlam) ctas.push(link(xlam, "Download the add-in", "btn"));
+  if (src) ctas.push(link(src, "Download the source", xlam ? "btn quiet" : "btn"));
   if (CAT.repo) ctas.push(`<a class="btn quiet" href="${esc(CAT.repo)}">Read the source</a>`);
-  if (!ctas.length) ctas.push(`<span class="btn soon">Download and source coming soon</span>`);
+  if (!ctas.length) ctas.push(`<span class="btn soon">Download coming soon</span>`);
   ctas.push(`<a class="btn quiet" href="#catalog">See every tool</a>`);
   $("#ctas").innerHTML = ctas.join("");
+  const ver = CAT.version ? `Version ${esc(CAT.version)}, ` : "";
+  if (xlam && !xlam.ext) $("#dl-note").innerHTML = `${ver}${kb(xlam.bytes)} add-in for Excel. <a href="#install">How to install it</a>.`;
+  else if (src && !xlam) $("#dl-note").innerHTML = `${ver}a ${kb(src.bytes)} zip of the VBA modules. <a href="#install">How to build the add-in</a>.`;
+  if (xlam) $("#get").innerHTML = `<b>Download</b> <span>${link(xlam, esc(xlam.file), "")}${xlam.bytes ? ` (${kb(xlam.bytes)})` : ""} and keep it somewhere it won't move: Excel loads the add-in from that spot every time it starts.${src ? ` The VBA modules are in ${link(src, "the source zip", "")}.` : ""}</span>`;
+  else if (src) $("#get").innerHTML = `<b>Build the add-in</b> <span>Download ${link(src, "the source", "")} (zip, ${kb(src.bytes)}) and unzip it. In a blank workbook open the VBA editor (Alt+F11, or Option+F11 on a Mac), use File, Import File for each file in <code>src/</code>, then save the workbook as an Excel Add-in (<code>.xlam</code>).</span>`;
 
   /* ---------- families ---------- */
   const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");

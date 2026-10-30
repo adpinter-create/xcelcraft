@@ -23,10 +23,17 @@ Everything below the hero is drawn from the JSON inside `<script id="catalog-dat
 
 ```
 python3 tools/build_catalog.py /path/to/XcelCraft_add-in_repo
-python3 tools/build_catalog.py /path/to/XcelCraft_add-in_repo --repo https://github.com/... --download https://github.com/.../XcelCraft.xlam
+python3 tools/build_catalog.py /path/to/XcelCraft_add-in_repo --xlam ~/Downloads/XcelCraft.xlam
 ```
 
-It reads `TOOL_TRACKER.csv` (Family, Category, Tool, Procedure, Default shortcut), `src/*.bas` and `src/*.cls` (which module defines each procedure) and the version from `CHANGELOG.md`, turns Excel `OnKey` strings into readable keys (`^%+q` → Ctrl+Alt+Shift+Q), writes `tools/catalog.json`, and injects the catalog into `index.html`, including the tool count in the page description. With `--repo` and `--download` the hero shows **Read the source** and **Download the add-in**; without them it shows a greyed "coming soon".
+It reads `TOOL_TRACKER.csv` (Family, Category, Tool, Procedure, Default shortcut), `src/*.bas` and `src/*.cls` (which module defines each procedure) and the version from `CHANGELOG.md`, turns Excel `OnKey` strings into readable keys (`^%+q` → Ctrl+Alt+Shift+Q), writes `tools/catalog.json`, and injects the catalog into `index.html`, including the tool count in the page description.
+
+It also writes the downloads into `download/`, which the site serves:
+
+- **`XcelCraft-<version>-source.zip`**, always: the add-in repo without `.git` and `.github`. The `.bas` and `.cls` files get Windows line endings (CRLF) on the way in, because the VBA editor misreads modules with Unix ones: a class can import as a standard module, and Mac Excel can refuse the file. The zip is reproducible, so an unchanged source gives an identical file.
+- **`XcelCraft-<version>.xlam`**, when there is one: pass `--xlam PATH`, or leave the built add-in in the add-in repo's root, `dist/`, `release/` or `build/`. An `.xlam` has to be saved from Excel; this script can't make one.
+
+With an `.xlam` the hero's main button is **Download the add-in** and the source is a second button; without one, **Download the source** is the main button and the install steps explain how to build the add-in from it in Excel. Older `XcelCraft-*` files in `download/` are removed. `--download URL` points the main button at a file hosted elsewhere instead, and `--repo URL` adds **Read the source** (only useful once that repo is public).
 
 `tools/catalog.overrides.json` picks the tools the hero acts out (`demos`: procedure → `scene` of `select`, `fill`, `hide` or `clear`, plus a caption) and can `hide` procedures from the page.
 
