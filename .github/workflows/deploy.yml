@@ -54,6 +54,17 @@ jobs:
           [ -d download ] && cp -r download _site/ || true
           [ -f CNAME ] && cp CNAME _site/ || true
 
+      - name: Password (switched on and off in the site portal, under Passwords)
+        if: steps.vis.outputs.hidden != '1'
+        env:
+          SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
+          SITE_NAME: "XcelCraft"
+        run: |
+          if [ -f PASSWORD_ON ]; then
+            node tools/protect_site.js _site
+          else
+            echo "No password: switched off in the site portal."
+          fi
       - uses: actions/configure-pages@v5
         if: steps.vis.outputs.hidden != '1' || github.event_name != 'schedule'
       - uses: actions/upload-pages-artifact@v3
